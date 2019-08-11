@@ -17,15 +17,6 @@ namespace twitter.DB
         {
         }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder builder)
-        //{
-        //    if (!builder.IsConfigured)
-        //    {
-        //        builder.UseNpgsql("Host=localhost;Database=twitDB;Username=postgres;Password=lenblenb7",
-        //            o => o.UseNetTopologySuite());
-        //    }
-        //}
-
         public async Task<EntityEntry<Tweet>> AddTweetWithCheckAsync(Tweet tweet)
         {
             EntityEntry<Tweet> tweetEntity = null;
